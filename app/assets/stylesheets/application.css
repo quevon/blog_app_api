@@ -13,5 +13,111 @@
  *= require_tree .
  *= require_self
  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+:root{  
+    --lightblue:rgb(30,144,255);
+    --black:#13131a;
+    --bg:linear-gradient(135deg, #000000, #2d3436);
+    --border:.1rem solid rgb(30,144,255);
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar{
+    width: 1rem;
+}
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+html::-webkit-scrollbar-thumb{
+    background: var(--bg);
+    border-radius: 5rem;
+}
+section{
+    padding: 2rem 7%;
+}
+body{
+    /* background: var(--bg); */
+}
 
- 
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    background: var(--black);
+}
+.header .logo{
+    display: flex;
+}
+.header .logo img{
+    height: 6rem;
+    border-radius: 50%;
+    border: 2px solid rgb(30,144,255);
+}
+.header .logo h3{
+    font-size: 3rem;
+    color: --black;
+
+}
+.header .logo span{
+    color: var(--lightblue);
+}
+.header .navbar a{
+    margin: 0 1rem;
+    font-size: 1.6rem;
+    color: --black;
+
+}
+.header .navbar a:hover{
+    color:var(--lightblue);
+    padding-bottom: .5rem;
+
+}
+.header .icons div{
+    color: #fff;
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+}
+.header .icons div:hover{
+    color:var(--lightblue);
+}
+/* news-section */
+
+.news-container{
+    margin: 5% auto;
+    display: grid;
+    grid-template-columns: repeat(2, 10fr);
+    grid-auto-rows: 500px;
+    width: 100%;
+    text-align: justify;
+
+}
+.news-container ul{
+    width: 90%;
+    list-style-type: none;
+}
+.news-container .title{
+    font-size: 20px;
+    font-weight: bold;
+}
+.news-container .description{
+    font-size: 14px;
+   
+}
