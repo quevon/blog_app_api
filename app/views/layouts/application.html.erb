@@ -18,9 +18,9 @@
         </a>
 
         <nav class="navbar">
-            <%= link_to 'Tesla News' ,news_blogs_tesla_news_path %>
-            <%= link_to 'Apple News' ,news_blogs_apple_news_path %>
-            <%= link_to 'Bussiness Headlines' ,news_blogs_headlines_path %>
+            <%= link_to 'Tesla News' ,news_blogs_tesla_news_path, :class => 'tesla' %>
+            <%= link_to 'Apple News' ,news_blogs_apple_news_path, :class => 'apple' %>
+            <%= link_to 'Business Headlines' ,news_blogs_headlines_path, :class => 'business' %>
         </nav>
     </header>
     <%= yield %>

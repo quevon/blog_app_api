@@ -7,5 +7,6 @@ class NewsBlogsController < ApplicationController
   end
   def apple_news
     @articles_apple = News::Client.apple_news[:data]["articles"]
+    @articles_popular = News::Client.popular_news[:data]["articles"]
   end
 end
