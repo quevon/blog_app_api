@@ -1,0 +1,20 @@
+
+<section class="news-container">
+    <% @articles_headlines.each do |article| %>
+        <ul>
+            <li>
+                <img src=<%=article["urlToImage"] %> alt="" width="500" height="300">
+            </li>
+            <li>
+                <%=article["publishedAt"] %>
+            </li>
+            <li>
+                <a href=<%=article["url"] %> class = "title"><%=article["title"]%></a>
+            </li>
+            <li class="description">
+                <%= article["description"] %>
+            </li>
+            </ul>
+    <% end%>
+</section>
+<h1>Headlines</h1>

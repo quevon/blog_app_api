@@ -1,0 +1,18 @@
+<section class="news-container">
+    <% @articles_apple.each do |article| %>
+        <ul>
+            <li>
+                <img src=<%=article["urlToImage"] %> alt="" width="500" height="300">
+            </li>
+            <li>
+                <%=article["publishedAt"] %>
+            </li>
+            <li>
+                <a href=<%=article["url"] %> class = "title"><%=article["title"]%></a>
+            </li>
+            <li class="description">
+                <%= article["description"] %>
+            </li>
+            </ul>
+    <% end%>
+</section>
