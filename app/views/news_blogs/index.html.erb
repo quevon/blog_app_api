@@ -1,0 +1,17 @@
+<% @random_qoutes.each do |article| %>
+    <ul>
+         <li>
+            <img src=<%=article["urlToImage"] %> alt="Girl in a jacket" width="500" height="300">
+        </li>
+        <li>
+            <%=article["publishedAt"] %>
+        </li>
+        <li>
+            <a href=<%=article["url"] target="_blank"%>><%=article["title"] %></a>
+        </li>
+        <li>
+            <%=article["content"] %>
+        </li>
+    </ul>
+<% end%>
+
