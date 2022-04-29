@@ -1,29 +1,24 @@
+# User Stories
+## Project API Wrapper (Individual):
+### Requirements:
+1. At least 3 endpoints created using a 3rd Party API:
+2. At least 1 without argument
+3. At least 1 with argument
+### Have a complete README documentation
+* Just make it available in the controllers and routes for testing purposes
+### Note:
+* If you want, it can be integrated to your existing application
+### Challenge:
+* Try creating another wrapper using another package
 # Blog Website Api
 ![news](docs/images/news.jpg)
-This project created by ruby on rails and the api that I used is newsapi.org 
 # API
 <a href="https://newsapi.org/" target="_blank">NewsApi</a>
 # Gem
 ```ruby
  gem 'rest-client'
 ```
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# Ruby Version
+* 2.7.0
+# Rails Version
+* 6.1.5.1
