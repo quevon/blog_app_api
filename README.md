@@ -10,8 +10,9 @@
 * If you want, it can be integrated to your existing application
 ### Challenge:
 * Try creating another wrapper using another package
-# Blog Website Api
+# Blog Website
 ![news](docs/images/news.jpg)
+Blog Website using api
 # API
 <a href="https://newsapi.org/" target="_blank">NewsApi</a>
 # Gem
