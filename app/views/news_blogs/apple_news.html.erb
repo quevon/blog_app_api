@@ -1,15 +1,14 @@
- <section class="container1">   
+<section class="container1">   
     <div class="news-container">
         <% @articles_apple.each do |article| %>
             <ul>
                 <li>
-                    <img src=<%=article["urlToImage"] %> alt="" width="500" height="300">
+                    <div class="img-container">
+                        <img src=<%=article["urlToImage"] %> alt="" width="550" height="350">
+                    <div>
                 </li>
                 <li>
-                    <%=article["publishedAt"] %>
-                </li>
-                <li>
-                    <a href=<%=article["url"] %> class = "title"><%=article["title"]%></a>
+                    <a href=<%=article["url"] %> class = "title" target="_blank"><%=article["title"]%></a>
                 </li>
                 <li class="description">
                     <%= article["description"] %>
@@ -22,13 +21,12 @@
         <% @articles_popular.each do |article| %>
             <ul>
                 <li>
-                    <img src=<%=article["urlToImage"] %> alt="" width="250" height="150">
+                    <div class="img-container">
+                        <img src=<%=article["urlToImage"] %> alt="" width="250" height="150">
+                    </div>
                 </li>
                 <li>
-                    <%=article["publishedAt"] %>
-                </li>
-                <li>
-                    <a href=<%=article["url"] %> class = "title"><%=article["title"]%></a>
+                    <a href=<%=article["url"] %> class = "title1"><%=article["title"]%></a>
                 </li>
             </ul>
         <% end%>
