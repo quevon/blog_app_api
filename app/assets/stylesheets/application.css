@@ -97,15 +97,12 @@ body{
 .header .icons div:hover{
     color:var(--lightblue);
 }
-.title-header{
-    margin: 10% auto;
-}
 /* news-section */
 .container1{
     display: grid;
     grid-template-columns: 80% 16%;
     text-align: justify;
-    margin: 10% auto;
+    margin: 5% auto;
 }
 
 .news-container{
@@ -164,6 +161,10 @@ body{
     padding-bottom: 15px;
     padding-top: 15px;
     border-bottom:1px solid;
+}
+.popular-news-container li{
+    padding-bottom: 5px;
+    font-size: 12px;
 }
 .popular-news-container ul li img{
     width: 100%;

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Blog</title>
+    <title>Blogs</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -12,58 +12,8 @@
   </head>
 
   <body>
-     <header class="header">
-        <a href="#" class="logo">
-          <%= image_tag ("logos/worldlogo.png") %>
-            <h3>World<span> News</span></h3>
-        </a>
-
-        <nav class="navbar">
-            <%= link_to 'Tesla News' ,news_blogs_tesla_news_path, :class => 'tesla' %>
-            <%= link_to 'Apple News' ,news_blogs_apple_news_path, :class => 'apple' %>
-            <%= link_to 'Business Headlines' ,news_blogs_headlines_path, :class => 'business' %>
-        </nav>
-    </header>
+	<%= render 'layouts/navbar' %>
     <%= yield %>
-     <footer class="footer">
-  	 <div class="container">
-  	 	<div class="row">
-  	 		<div class="footer-col">
-  	 			<h4>company</h4>
-  	 			<ul>
-  	 				<li><a href="#">about us</a></li>
-  	 				<li><a href="#">our services</a></li>
-  	 				<li><a href="#">privacy policy</a></li>
-  	 				<li><a href="#">affiliate program</a></li>
-  	 			</ul>
-  	 		</div>
-  	 		<div class="footer-col">
-  	 			<h4>General</h4>
-  	 			<ul>
-  	 				<li><a href="#">Our Team</a></li>
-  	 				<li><a href="#">Our Approach</a></li>
-  	 				<li><a href="#">Join The Cause</a></li>
-  	 			</ul>
-  	 		</div>
-  	 		<div class="footer-col">
-  	 			<h4>Resource</h4>
-  	 			<ul>
-  	 				<li><a href="#">Blog</a></li>
-  	 				<li><a href="#">Media</a></li>
-  	 				<li><a href="#">Site Search</a></li>
-  	 			</ul>
-  	 		</div>
-  	 		<div class="footer-col">
-  	 			<h4>follow us</h4>
-  	 			<div class="social-links">
-  	 				<a href="#"><i class="fab fa-facebook-f"></i></a>
-  	 				<a href="#"><i class="fab fa-twitter"></i></a>
-  	 				<a href="#"><i class="fab fa-instagram"></i></a>
-  	 				<a href="#"><i class="fab fa-linkedin-in"></i></a>
-  	 			</div>
-  	 		</div>
-  	 	</div>
-  	 </div>
-  </footer>
+    <%= render 'layouts/footer' %>
   </body>
 </html>
